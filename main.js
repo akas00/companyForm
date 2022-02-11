@@ -1,4 +1,4 @@
-//your javascript goes here
+//Multistep Form
 var currentTab = 0;
 document.addEventListener("DOMContentLoaded", function (event) {
   showTab(currentTab);
@@ -64,6 +64,7 @@ function fixStepIndicator(n) {
   x[n].className += " active";
 }
 
+// Firststepform
 // jquery
 $(document).ready(function () {
   $("#how-kw-other").on("change", function () {

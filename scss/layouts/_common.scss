@@ -72,15 +72,15 @@ input.invalid {
 }
 .recomm-check-box {
     .check-box-wrapper {
-        display: flex;
-        justify-content: space-between;
         padding-top: 10px;
         padding-bottom: 10px;
+        border-bottom: 1px solid #c4c4c4;
     }
     .form-group {
         display: block;
         margin-bottom: 15px;
         width: 100%;
+        margin-top: 15px;
     }
 
     .form-group input {
@@ -97,11 +97,16 @@ input.invalid {
         position: relative;
         cursor: pointer;
         display: flex;
+        font-size: 14px;
+        color: #666;
 
         .d-flex {
             width: 100%;
             display: flex !important;
             justify-content: space-between;
+            span {
+                padding-left: 15px;
+            }
         }
     }
 
@@ -113,7 +118,7 @@ input.invalid {
         vertical-align: middle;
         cursor: pointer;
         margin-right: 5px;
-        height: 24px;
+        height: 22px;
         width: 24px;
         background: #fff;
         border: 1px solid #c4c4c4;
