@@ -1,0 +1,38 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+h1 {
+  font-size: 72px;
+}
+h2 {
+  font-size: 59px;
+}
+h3 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 14px;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none !important;
+  @include ease;
+  color: black;
+}

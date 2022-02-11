@@ -1,0 +1,138 @@
+.form-wrapper {
+    background: #fff;
+    // box-shadow: 0 1px 5px rgb(0 0 0 / 20%), inset 0 5px 0 #cc1f26;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+}
+
+input.invalid {
+    background-color: #ffdddd;
+}
+
+.form-title {
+    font-weight: 500;
+    font-size: 20px;
+    color: #2e2e2e;
+    margin-bottom: 10px;
+}
+.form-wrapper .form-label {
+    font-weight: 500;
+    font-size: 20px;
+    color: #2e2e2e;
+    margin-bottom: 10px;
+    span {
+        color: #cc1f26;
+        cursor: pointer;
+    }
+}
+.accordion {
+    .accordion-item {
+        border: none !important;
+        background: #fff;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+        margin-bottom: 20px;
+    }
+    .accordion-button:not(.collapsed) {
+        color: #000 !important;
+        background-color: #fff !important;
+        box-shadow: none !important;
+    }
+    .accordion-button {
+        font-size: 17px;
+        font-weight: 500;
+        padding: 1.5rem 1.25rem;
+        &:focus {
+            border: none !important;
+            box-shadow: none !important;
+        }
+    }
+
+    .red,
+    .title-red {
+        color: #cc1f26;
+    }
+    .text-smallstyle {
+        padding: 2px 20px;
+        font-weight: 500;
+        border-top: 1px solid #ddd;
+        font-size: 12px;
+        p {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    }
+}
+.recomm-check-box {
+    .check-box-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .form-group {
+        display: block;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .form-group input {
+        padding: 0;
+        height: initial;
+        width: initial;
+        margin-bottom: 0;
+        display: none;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .form-group label {
+        position: relative;
+        cursor: pointer;
+        display: flex;
+
+        .d-flex {
+            width: 100%;
+            display: flex !important;
+            justify-content: space-between;
+        }
+    }
+
+    .form-group label:before {
+        content: "";
+
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        cursor: pointer;
+        margin-right: 5px;
+        height: 24px;
+        width: 24px;
+        background: #fff;
+        border: 1px solid #c4c4c4;
+        border-radius: 4px;
+    }
+
+    .form-group input:checked + label:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 2px;
+        left: 9px;
+        width: 6px;
+        height: 14px;
+        border: solid #fff;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+    }
+    .form-group input:checked + label::before {
+        background-color: #cc1f26;
+    }
+}

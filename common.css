@@ -1,0 +1,18 @@
+.form-wrapper {
+  background: #fff;
+  box-shadow: 0 1px 5px rgb(0 0 0 / 20%), inset 0 5px 0 #cc1f26;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+input.invalid {
+  background-color: #ffdddd;
+}

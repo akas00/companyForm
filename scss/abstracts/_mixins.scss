@@ -1,0 +1,69 @@
+/*********************
+BREAKPOINTS
+*********************/
+
+@mixin breakpoint($point) {
+  /* Large Devices, Wide Screens */
+  @if $point == larger {
+    @media (max-width: 1920px) {
+      @content;
+    }
+  }
+  /* Large Devices, Wide Screens */
+  @if $point == wider {
+    @media (max-width: 1440px) {
+      @content;
+    }
+  }
+  /* Medium Devices, Desktops */
+  @else if $point == wide {
+    @media (max-width: 1199px) {
+      @content;
+    }
+  }
+  /* Medium Devices, Desktops */
+  @else if $point == medium {
+    @media (max-width: 991px) {
+      @content;
+    }
+  }
+  /* Small Devices, Tablets */
+  @else if $point == small {
+    //@media (max-width : 768px) { @content ; }
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+  /* Extra Small Devices, Phones */
+  @else if $point == smaller {
+    @media (max-width: 567px) {
+      @content;
+    }
+  }
+  /* Extra Small Devices, Phones */
+  @else if $point == extrasmall {
+    @media (max-width: 479px) {
+      @content;
+    }
+  }
+  /* Custom, iPhone Retina */
+  @else if $point == iPhone5 {
+    @media (max-width: 374px) {
+      @content;
+    }
+  }
+}
+
+/*********************
+Transition
+*********************/
+
+@mixin ease {
+  transition: 0.3s ease-in-out;
+}
+@mixin positionCenter {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}

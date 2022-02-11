@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="common.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        >
+    </head>
+    <body>
+        <div class="service-form-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <form id="regForm">
+                            <div class="allsteps" id="all-steps">
+                                <div class="steps-steps">
+                                    <div class="step-1 step">
+                                        <span>1</span>
+                                    </div>
+                                    <div class="step-2 step">
+                                        <span>2</span>
+                                    </div>
+                                    <div class="step-3 step">
+                                        <span>3</span>
+                                    </div>
+                                    <div class="step-4 step">
+                                        <span>4</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- tab -->
+                            <div class="first-tab tab ">
+                                <h2 id="register" class="tab-heading">
+                                    Step 1: Type of your service
+                                </h2>
+                                <!-- setup -->
+                                <div class="setup-section ">
+                                    <form>
+                                        <div class="form-wrapper">
+                                            <div class="form-title">Setup Service</div>
+                                            <div class="mb-3 ">
+                                                <label for="exampleInputEmail1" class="form-label">
+                                                    Type of Service
+                                                    <span>[ ? ]</span>
+                                                </label>
+                                                <select class="form-select" id="setup-one-select" aria-label="Default select example">
+                                                    <option selected>Please select type of the services</option>
+                                                    <option value="1">Company Formation/Incorporation</option>
+                                                    <option value="2">Trust Formation</option>
+                                                    <option value="3">Foundation Formation</option>
+                                                    <option value="4">Account Opening Consultancy</option>
+                                                </select>
+                                            </div>
+                                            <!-- setup-dropdown one -->
+                                            <div class="show-hide " id="setup-one-dropdown">
+                                                <!-- setup-dropdown one --sub -->
+                                                <div class="selects-wrapper  mb-3  ">
+                                                    <label for="exampleInputEmail1" class="form-label">
+                                                        Jurisdiction of Incorporation
+                                                        <span>[ ? ]</span>
+                                                    </label>
+                                                    <select class="form-select" aria-label="Default select example" id="setup-one-select1">
+                                                        <option selected disabled>Please select</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                                <!-- setup-dropdown one --sub -->
+                                                <div class="selects-wrapper  mb-3 ">
+                                                    <label for="exampleInputEmail1" class="form-label">
+                                                        Type of Incorporation
+                                                        <span>[ ? ]</span>
+                                                    </label>
+                                                    <select class="form-select" aria-label="Default select example" id="setup-one-select2">
+                                                        <option selected disabled>Please select</option>
+                                                        <option value="1">Internation Business Company (IBC)</option>
+                                                    </select>
+                                                </div>
+                                                <!-- setup-dropdown one -sub-sub -->
+                                                <div class="show-hide setup-sub-dropdown" id="" data-for="1">
+                                                    <div class="selects-wrapper  mb-3 ">
+                                                        <label for="exampleInputEmail1" class="form-label">
+                                                            Number of Director(s)
+                                                            <span>[ ? ]</span>
+                                                        </label>
+                                                        <select class="form-select" aria-label="Default select example" id="setup-twosub-select1">
+                                                            <option selected disabled>Please select</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <!-- setup-dropdown one -sub-sub -->
+                                                <div class="show-hide setup-sub-dropdown" id="" data-for="2">
+                                                    <div class="selects-wrapper  mb-3 ">
+                                                        <label for="exampleInputEmail1" class="form-label">
+                                                            Number of Shareholder(s)
+                                                            <span>[ ? ]</span>
+                                                        </label>
+                                                        <select class="form-select" aria-label="Default select example" id="setup-twosub-select2">
+                                                            <option selected disabled>Please select</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- setup-dropdown two -->
+                                            <div class="show-hide " id="setup-two-dropdown">
+                                                <div class="selects-wrapper  mb-3 ">
+                                                    <label for="exampleInputEmail1" class="form-label">
+                                                        Type of Service
+                                                        <span>[ ? ]</span>
+                                                    </label>
+                                                    <select class="form-select" aria-label="Default select example" id="setup-two-select1">
+                                                        <option selected disabled>Please select</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <!-- setup-dropdown three -->
+                                            <div class="show-hide " id="setup-three-dropdown">
+                                                <div class="selects-wrapper  mb-3 ">
+                                                    <label for="exampleInputEmail1" class="form-label">
+                                                        Type of Service
+                                                        <span>[ ? ]</span>
+                                                    </label>
+                                                    <select class="form-select" aria-label="Default select example" id="setup-two-select2">
+                                                        <option selected disabled>Please select</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <!-- setup-dropdown Four -->
+                                            <div class="show-hide " id="setup-four-dropdown">
+                                                <div class="selects-wrapper  mb-3 ">
+                                                    <label for="exampleInputEmail1" class="form-label">
+                                                        Bank Country
+                                                    </label>
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected disabled>Please select</option>
+                                                        <option value="1">nepal</option>
+                                                        <option value="2">India</option>
+                                                        <option value="3">japan</option>
+                                                        <option value="3">Usa</option>
+                                                        <option value="3">China</option>
+                                                        <option value="3">Quatar</option>
+                                                        <option value="3">Korea</option>
+                                                    </select>
+                                                </div>
+                                                <div class="selects-wrapper  mb-3 ">
+                                                    <label for="exampleInputEmail1" class="form-label">
+                                                        Bank Name
+                                                    </label>
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected disabled>Please select</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group selects-wrapper  mb-3 " style="" data-bind="visible: Bank.isActive()">
+                                                    <label>Are you have Offshore Company?</label>
+                                                    <div class="have-company">
+                                                        <button type="button" class="btn btn-yes" id="bank-without-setup-company">Yes</button>
+                                                        <button type="button" class="btn btn-no" id="bank-with-setup-company">No</button>
+                                                        <p class="text-note">Note: You need to fill on below.</p>
+                                                    </div>
+                                                    <div id="bank-question-error" style="display: none">
+                                                        <br>
+                                                        <div class="alert alert-danger fade in alert-dismissible">Please select this field!</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!--recomm-section -->
+                                <div class="recomm-section ">
+                                    <form>
+                                        <div class="form-wrapper">
+                                            <div class="form-title">Recommend Services</div>
+                                            <div class="accordion" id="accordionExample">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingOne">
+                                                        <button
+                                                            class="accordion-button"
+                                                            type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#collapseOne"
+                                                            aria-expanded="true"
+                                                            aria-controls="collapseOne"
+                                                        >
+                                                            Account Opening Consultancy
+                                                        </button>
+                                                    </h2>
+                                                    <div
+                                                        id="collapseOne"
+                                                        class="accordion-collapse collapse "
+                                                        aria-labelledby="headingOne"
+                                                        data-bs-parent="#accordionExample"
+                                                    >
+                                                        <div class="accordion-body">
+                                                            <div class="selects-wrapper  mb-3 ">
+                                                                <label for="exampleInputEmail1" class="form-label">
+                                                                    Bank Country
+                                                                </label>
+                                                                <select class="form-select" aria-label="Default select example">
+                                                                    <option selected disabled>Please select</option>
+                                                                    <option value="1">nepal</option>
+                                                                    <option value="2">India</option>
+                                                                    <option value="3">japan</option>
+                                                                    <option value="3">Usa</option>
+                                                                    <option value="3">China</option>
+                                                                    <option value="3">Quatar</option>
+                                                                    <option value="3">Korea</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="selects-wrapper  mb-3 ">
+                                                                <label for="exampleInputEmail1" class="form-label">
+                                                                    Bank Name
+                                                                </label>
+                                                                <select class="form-select" aria-label="Default select example">
+                                                                    <option selected disabled>Please select</option>
+                                                                    <option value="1">One</option>
+                                                                    <option value="2">Two</option>
+                                                                    <option value="3">Three</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="red text-smallstyle">
+                                                        <p>One Time with Only from US$ 499</p>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingTwo">
+                                                        <button
+                                                            class="accordion-button collapsed"
+                                                            type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#collapseTwo"
+                                                            aria-expanded="false"
+                                                            aria-controls="collapseTwo"
+                                                        >
+                                                            Nominee Director/Shareholder Services
+                                                        </button>
+                                                    </h2>
+                                                    <div
+                                                        id="collapseTwo"
+                                                        class="accordion-collapse collapse"
+                                                        aria-labelledby="headingTwo"
+                                                        data-bs-parent="#accordionExample"
+                                                    >
+                                                        <div class="accordion-body">
+                                                            <div class="selects-wrapper  mb-3 ">
+                                                                <label for="exampleInputEmail1" class="form-label">
+                                                                    Bank Name
+                                                                </label>
+                                                                <select class="form-select" aria-label="Default select example">
+                                                                    <option selected disabled>Please select</option>
+                                                                    <option value="1">One</option>
+                                                                    <option value="2">Two</option>
+                                                                    <option value="3">Three</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="red text-smallstyle">
+                                                        <p>One Time with Only from US$ 499</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="recomm-check-box">
+                                                <div class="check-box-wrapper">
+                                                    <div class="form-group" id="service-office">
+                                                        <input type="checkbox" id="service-offer">
+                                                        <label for="service-offer">
+                                                            <div class="d-flex">
+                                                                <span>Serviced Office</span>
+                                                                <span>US$ 0</span>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                    <div class="show-hide" id="service-office-dropdown">
+                                                        <div class="selects-wrapper  mb-3 ">
+                                                            <label for="exampleInputEmail1" class="form-label">
+                                                                Choose jurisdictions of your serviced office
+                                                            </label>
+                                                            <select class="form-select" aria-label="Default select example">
+                                                                <option selected disabled>Please select</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="check-box-wrapper">
+                                                    <div class="form-group">
+                                                        <input type="checkbox" id="Merchant">
+                                                        <label for="Merchant">
+                                                            <div class="d-flex">
+                                                                <span>Merchant Account Online</span>
+                                                                <span>US$ 99</span>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="check-box-wrapper">
+                                                    <div class="form-group" id="bookkeeping">
+                                                        <input type="checkbox" id="Bookkeeping">
+                                                        <label for="Bookkeeping">
+                                                            <div class="d-flex">
+                                                                <span>Bookkeeping</span>
+                                                                <span>US$ 0</span>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                    <div class="show-hide" id="bookkeeping-dropdown">
+                                                        <div class="selects-wrapper  mb-3 ">
+                                                            <label for="exampleInputEmail1" class="form-label">
+                                                                Select estimate of your company transaction in monthly
+                                                            </label>
+                                                            <select class="form-select" aria-label="Default select example">
+                                                                <option selected disabled>Please select</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- how know-section -->
+                                <div class="how-know-section">
+                                    <form>
+                                        <div class="form-wrapper">
+                                            <div class="form-title">Recommend Services</div>
+                                            <div class="selects-wrapper  mb-3 ">
+                                                <!-- <label for="exampleInputEmail1" class="form-label">
+                                                    Type of Service
+                                                    <span>[ ? ]</span>
+                                                </label> -->
+                                                <select class="form-select" aria-label="Default select example" id="how-kw-other">
+                                                    <option selected disabled>Please select</option>
+                                                    <optgroup label="Social Media">
+                                                        <option data-know-type="text" value="6">Facebook</option>
+                                                        <option data-know-type="text" value="7">Youtube</option>
+                                                        <option data-know-type="text" value="8">Linkedin</option>
+                                                        <option data-know-type="text" value="9">Twitter</option>
+                                                    </optgroup>
+                                                    <optgroup label="Mass Media">
+                                                        <option data-know-type="text" value="10">Newspaper</option>
+                                                        <option data-know-type="text" value="11">Television</option>
+                                                    </optgroup>
+                                                    <optgroup label="Internet">
+                                                        <option data-know-type="text" value="12">Google search</option>
+                                                        <option data-know-type="text" value="13">Display ads</option>
+                                                    </optgroup>
+                                                    <option value="1">Referral</option>
+                                                    <option value="2">Others</option>
+                                                </select>
+                                                <div class="others-input show-hide" id="how-kw-other-dropdown">
+                                                    <input
+                                                        type="text"
+                                                        maxlength="255"
+                                                        name="txtServiceKnowText"
+                                                        id="txtServiceKnowText"
+                                                        class="form-control"
+                                                        placeholder="Please tell us more"
+                                                        value=""
+                                                    >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- tab -->
+                            <div class="login-section tab">
+                                <h1 id="register">Step 2: Type of your service</h1>
+                                <form>
+                                    <div class="form-title">next tab</div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">
+                                            Type of Service
+                                            <span>[ ? ]</span>
+                                        </label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                            <div style="overflow:auto;" id="nextprevious">
+                                <div style="text-align: center;" class="form-buttons">
+                                    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                                    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="right-wrapper">
+                            <div class="order-summary-section">
+                                <div class="form-wrapper">
+                                    <div class="form-title">Recommend Services</div>
+                                    <div class="summary-contents">
+                                        <div class=" default-summary summary-wrapper ">
+                                            <label for="exampleInputEmail1" class="form-label">
+                                                Type of Service
+                                                <span>[ ? ]</span>
+                                            </label>
+                                            <p>
+                                                Company Formation/Incorporation
+                                            </p>
+                                        </div>
+                                        <div class="comany-formation-summary show-hide right-dropdown " data-for="1" id="setup-summary-one-dropdown">
+                                            <div class=" summary-wrapper ">
+                                                <label for="exampleInputEmail1" class="form-label">
+                                                    Jurisdiction of Incorporation
+                                                    <span>[ ? ]</span>
+                                                </label>
+                                                <p id="setup-please-select">
+                                                    Please select
+                                                </p>
+                                            </div>
+                                            <div class=" summary-wrapper ">
+                                                <label for="exampleInputEmail1" class="form-label">
+                                                    Type of Incorporation
+                                                    <span>[ ? ]</span>
+                                                    <p>Please select</p>
+                                                </label>
+                                                <p id="setup-please-select2">
+                                                    US $00
+                                                </p>
+                                            </div>
+                                            <div class="etup-owners-dropdown show-hide" id="setup-owners-dropdown">
+                                                <div class=" summary-wrapper ">
+                                                    <label for="exampleInputEmail1" class="form-label">
+                                                        Number of Director(s)
+                                                        <span>[ ? ]</span>
+                                                        <p>Please select</p>
+                                                    </label>
+                                                    <p id="director-number">
+                                                        2
+                                                    </p>
+                                                </div>
+                                                <div class=" summary-wrapper  ">
+                                                    <label for="exampleInputEmail1" class="form-label">
+                                                        Number of Shareholder(s)
+                                                        <span>[ ? ]</span>
+                                                        <p>Please select</p>
+                                                    </label>
+                                                    <p id="Shareholder-number">
+                                                        5
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class=" summary-wrapper ">
+                                                <label for="exampleInputEmail1" class="form-label">
+                                                    Processing Time
+                                                    <span>[ ? ]</span>
+                                                    <p>Please select</p>
+                                                </label>
+                                                <p>
+                                                    US $00
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="comany-formation-summary show-hide right-dropdown " data-for="2" id="">
+                                            <div class=" summary-wrapper ">
+                                                <label for="exampleInputEmail1" class="form-label">
+                                                    Jurisdiction of Incorporation2
+                                                    <span>[ ? ]</span>
+                                                </label>
+                                                <p>
+                                                    Please select
+                                                </p>
+                                            </div>
+                                            <div class=" summary-wrapper ">
+                                                <label for="exampleInputEmail1" class="form-label">
+                                                    Type of Incorporation
+                                                    <span>[ ? ]</span>
+                                                    <p>Please select</p>
+                                                </label>
+                                                <p>
+                                                    US $00
+                                                </p>
+                                            </div>
+                                            <div class=" summary-wrapper ">
+                                                <label for="exampleInputEmail1" class="form-label">
+                                                    Processing Time
+                                                    <span>[ ? ]</span>
+                                                    <p>Please select</p>
+                                                </label>
+                                                <p>
+                                                    US $00
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="comany-formation-summary show-hide right-dropdown " data-for="3" id="">
+                                            <div class=" summary-wrapper ">
+                                                <label for="exampleInputEmail1" class="form-label">
+                                                    Jurisdiction of Incorporation3
+                                                    <span>[ ? ]</span>
+                                                </label>
+                                                <p>
+                                                    Please select
+                                                </p>
+                                            </div>
+                                            <div class=" summary-wrapper ">
+                                                <label for="exampleInputEmail1" class="form-label">
+                                                    Type of Incorporation
+                                                    <span>[ ? ]</span>
+                                                    <p>Please select</p>
+                                                </label>
+                                                <p>
+                                                    US $00
+                                                </p>
+                                            </div>
+                                            <div class=" summary-wrapper ">
+                                                <label for="exampleInputEmail1" class="form-label">
+                                                    Processing Time
+                                                    <span>[ ? ]</span>
+                                                    <p>Please select</p>
+                                                </label>
+                                                <p>
+                                                    US $00
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary-total">
+                                        <p>Total</p>
+                                        <span>US $00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="container mt-5">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-6">
+                    <form id="regForm">
+                        <h1 id="register">Donate</h1>
+                        <div class="all-steps" id="all-steps">
+                            <span class="step"></span>
+                            <span class="step"></span>
+                            <span class="step"></span>
+                            <span class="step"></span>
+                        </div>
+                        <div class="tab">
+                            <h3>Donation Type:</h3>
+                            <label class="container">
+                                One time
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">
+                                Recurring
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <p>
+                                <input
+                                    type="text"
+                                    placeholder="Amount"
+                                    oninput="this.className = ''"
+                                    name="amount"
+                                >
+                            </p>
+                        </div>
+                        <div class="tab">
+                            <p>
+                                <input placeholder="First Name" oninput="this.className = ''" name="first">
+                            </p>
+                            <p>
+                                <input placeholder="Last Name" oninput="this.className = ''" name="last">
+                            </p>
+                            <p>
+                                <input placeholder="Email" oninput="this.className = ''" name="email">
+                            </p>
+                            <p>
+                                <input placeholder="Phone" oninput="this.className = ''" name="phone">
+                            </p>
+                            <p>
+                                <input placeholder="Street Address" oninput="this.className = ''" name="address">
+                            </p>
+                            <p>
+                                <input placeholder="City" oninput="this.className = ''" name="city">
+                            </p>
+                            <p>
+                                <input placeholder="State" oninput="this.className = ''" name="state">
+                            </p>
+                            <p>
+                                <input placeholder="Country" oninput="this.className = ''" name="country">
+                            </p>
+                        </div>
+                        <div class="tab">
+                            <p>
+                                <input placeholder="Credit Card #" oninput="this.className = ''" name="email">
+                            </p>
+                            <p>
+                                Exp Month
+                                <select id="month">
+                                    <option value="1">January</option>
+                                    <option value="2">February</option>
+                                    <option value="3">March</option>
+                                    <option value="4">April</option>
+                                    <option value="5">May</option>
+                                    <option value="6">June</option>
+                                    <option value="7">July</option>
+                                    <option value="8">August</option>
+                                    <option value="9">September</option>
+                                    <option value="10">October</option>
+                                    <option value="11">November</option>
+                                    <option value="12">December</option>
+                                </select>
+                            </p>
+                            <p>
+                                Exp Year
+                                <select id="year">
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                </select>
+                            </p>
+                            <p>
+                                <input placeholder="CVV" oninput="this.className = ''" name="phone">
+                            </p>
+                        </div>
+                        <div class="thanks-message text-center" id="text-message">
+                            <img src="https://i.imgur.com/O18mJ1K.png" width="100" class="mb-4">
+                            <h3>Thanks for your Donation!</h3>
+                            <span>Your donation has been entered! We will contact you shortly!</span>
+                        </div>
+                        <div style="overflow:auto;" id="nextprevious">
+                            <div style="float:right;">
+                                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                                <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div> -->
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</html>
