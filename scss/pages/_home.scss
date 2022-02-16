@@ -11,7 +11,15 @@ h1 {
 //     padding: 20px;
 //     margin-bottom: 40px;
 // }
-
+// .show-hide.show {
+//     display: block;
+// }
+// .show-hide {
+//     display: none;
+// }
+.payment-4-dropdown .tab-btn.bg {
+    background-color: red;
+}
 input {
     padding: 10px;
     width: 100%;
@@ -31,7 +39,7 @@ input.invalid {
     padding: 40px 0;
     border-radius: 10px;
     position: relative;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 .form-buttons button {
@@ -182,6 +190,7 @@ button:hover {
 // right-wrapper
 
 .right-wrapper {
+    margin-top: 40px;
     .order-summary-section {
         .form-wrapper {
             background: #fff;
@@ -249,6 +258,82 @@ button:hover {
             span {
                 color: #cc1f26;
             }
+        }
+    }
+}
+
+// third-tab-section
+.third-tab-section {
+    .form-wrapper {
+        .col-lg-4 {
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            label {
+                display: inline-block;
+                max-width: 100%;
+                margin-bottom: 5px;
+                font-weight: 700;
+                font-size: 14px;
+            }
+        }
+
+        .payment {
+            height: 100%;
+            background: #fff;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.27);
+            border-radius: 4px;
+            text-align: center;
+            padding: 20px 20px 0 18px;
+            opacity: 0.6;
+            border: 1px solid transparent;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            cursor: pointer;
+            transition: 0.3s ease-out;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            &:hover {
+                border: 1px solid #cc1f26;
+                opacity: 1;
+            }
+            &.active {
+                border: 1px solid #cc1f26;
+                opacity: 1;
+            }
+            .payment-text {
+                text-align: center;
+
+                p {
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 13px;
+                }
+            }
+
+            img {
+                max-height: 70px;
+                object-fit: contain;
+            }
+        }
+    }
+    .payment-1-dropdown {
+        .card-number {
+            .card-images {
+                margin-top: 20px;
+            }
+        }
+    }
+    .card-values {
+        .form-group {
+            flex: 0 0 30%;
+        }
+    }
+    .payment-4-dropdown {
+        .buttons {
+            display: flex;
         }
     }
 }

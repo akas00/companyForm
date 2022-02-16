@@ -139,6 +139,17 @@ $(document).ready(function () {
 
     // $(".selects-wrapper").html($selectValue);
   });
+  $("#yes-no-btn .btn").on("click", function (e) {
+    $(this).first().addClass("bg");
+    $(".btn").not(this).removeClass("bg");
+  });
+
+  $("#yes-no-btn .btn").on("click", function () {
+    $(".if-yes-dropdown").removeClass("show");
+    if ($(this).attr("id") == "bank-without-setup-company") {
+      $("#if-yes-dropdown").addClass("show");
+    }
+  });
 
   //service
   $("#service-office label").on("click", function (e) {
@@ -179,3 +190,47 @@ $("#setup-one-dropdown .setup-sub-dropdown .selects-wrapper select").on(
     }
   }
 );
+
+// step3 jQuery
+
+//AccomodationType
+
+$(".payment").on("click", function (e) {
+  $(this).first().addClass("active");
+  $(".payment").not(this).removeClass("active");
+});
+
+$(".payment-4-dropdown .tab-btn").on("click", function (e) {
+  $(this).first().addClass("bg");
+  $(".payment-4-dropdown .tab-btn").not(this).removeClass("bg");
+});
+
+$(".payment-4-dropdown .tab-btn").on("click", function () {
+  // $(".tab-pane").removeClass("show");
+  if ($(this).attr("id") == "hsbc-bank") {
+    $("#tab-hsbc").addClass("show");
+    $("#tab-sepa").removeClass("show");
+  }
+  if ($(this).attr("id") == "sepa-transfer") {
+    $("#tab-sepa").addClass("show");
+    $("#tab-hsbc").removeClass("show");
+  }
+});
+
+$(".payment").on("click", function () {
+  // alert("mesgae");
+  $(".payment-dropdown").removeClass("show");
+
+  if ($(this).attr("id") == "payment1") {
+    $("#payment-1-dropdown").addClass("show");
+  }
+  if ($(this).attr("id") == "payment2") {
+    $("#payment-2-dropdown").addClass("show");
+  }
+  if ($(this).attr("id") == "payment3") {
+    $("#payment-3-dropdown").addClass("show");
+  }
+  if ($(this).attr("id") == "payment4") {
+    $("#payment-4-dropdown").addClass("show");
+  }
+});

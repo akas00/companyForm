@@ -54,7 +54,12 @@
                                                     Type of Service
                                                     <span>[ ? ]</span>
                                                 </label>
-                                                <select class="form-select" id="setup-one-select" aria-label="Default select example">
+                                                <select
+                                                    class="form-select error-red-border"
+                                                    name="setup-one-select"
+                                                    id="setup-one-select"
+                                                    aria-label="Default select example"
+                                                >
                                                     <option selected>Please select type of the services</option>
                                                     <option value="1">Company Formation/Incorporation</option>
                                                     <option value="2">Trust Formation</option>
@@ -70,7 +75,12 @@
                                                         Jurisdiction of Incorporation
                                                         <span>[ ? ]</span>
                                                     </label>
-                                                    <select class="form-select" aria-label="Default select example" id="setup-one-select1">
+                                                    <select
+                                                        class="form-select"
+                                                        name="Jurisdiction"
+                                                        aria-label="Default select example"
+                                                        id="setup-one-select1"
+                                                    >
                                                         <option selected disabled>Please select</option>
                                                         <option value="1">One</option>
                                                         <option value="2">Two</option>
@@ -83,7 +93,12 @@
                                                         Type of Incorporation
                                                         <span>[ ? ]</span>
                                                     </label>
-                                                    <select class="form-select" aria-label="Default select example" id="setup-one-select2">
+                                                    <select
+                                                        class="form-select error-red-border"
+                                                        name="Type of Incorporation"
+                                                        aria-label="Default select example"
+                                                        id="setup-one-select2"
+                                                    >
                                                         <option selected disabled>Please select</option>
                                                         <option value="1">Internation Business Company (IBC)</option>
                                                     </select>
@@ -95,7 +110,12 @@
                                                             Number of Director(s)
                                                             <span>[ ? ]</span>
                                                         </label>
-                                                        <select class="form-select" aria-label="Default select example" id="setup-twosub-select1">
+                                                        <select
+                                                            class="form-select"
+                                                            name="numberofdirectors"
+                                                            aria-label="Default select example"
+                                                            id="setup-twosub-select1"
+                                                        >
                                                             <option selected disabled>Please select</option>
                                                             <option value="1">1</option>
                                                             <option value="2">2</option>
@@ -110,7 +130,12 @@
                                                             Number of Shareholder(s)
                                                             <span>[ ? ]</span>
                                                         </label>
-                                                        <select class="form-select" aria-label="Default select example" id="setup-twosub-select2">
+                                                        <select
+                                                            class="form-select"
+                                                            name="numberofshares"
+                                                            aria-label="Default select example"
+                                                            id="setup-twosub-select2"
+                                                        >
                                                             <option selected disabled>Please select</option>
                                                             <option value="1">1</option>
                                                             <option value="2">2</option>
@@ -126,7 +151,12 @@
                                                         Type of Service
                                                         <span>[ ? ]</span>
                                                     </label>
-                                                    <select class="form-select" aria-label="Default select example" id="setup-two-select1">
+                                                    <select
+                                                        class="form-select"
+                                                        name="typeofservice"
+                                                        aria-label="Default select example"
+                                                        id="setup-two-select1"
+                                                    >
                                                         <option selected disabled>Please select</option>
                                                         <option value="1">One</option>
                                                         <option value="2">Two</option>
@@ -155,7 +185,7 @@
                                                     <label for="exampleInputEmail1" class="form-label">
                                                         Bank Country
                                                     </label>
-                                                    <select class="form-select" aria-label="Default select example">
+                                                    <select class="form-select" name="bankcountry" aria-label="Default select example">
                                                         <option selected disabled>Please select</option>
                                                         <option value="1">nepal</option>
                                                         <option value="2">India</option>
@@ -170,24 +200,77 @@
                                                     <label for="exampleInputEmail1" class="form-label">
                                                         Bank Name
                                                     </label>
-                                                    <select class="form-select" aria-label="Default select example">
+                                                    <select class="form-select" name="bankname" aria-label="Default select example">
                                                         <option selected disabled>Please select</option>
                                                         <option value="1">One</option>
                                                         <option value="2">Two</option>
                                                         <option value="3">Three</option>
                                                     </select>
                                                 </div>
-                                                <div class="form-group selects-wrapper  mb-3 " style="" data-bind="visible: Bank.isActive()">
+                                                <div class="form-group selects-wrapper  mb-3 ">
                                                     <label>Are you have Offshore Company?</label>
-                                                    <div class="have-company">
+                                                    <div class="have-company" id="yes-no-btn">
                                                         <button type="button" class="btn btn-yes" id="bank-without-setup-company">Yes</button>
                                                         <button type="button" class="btn btn-no" id="bank-with-setup-company">No</button>
-                                                        <p class="text-note">Note: You need to fill on below.</p>
                                                     </div>
-                                                    <div id="bank-question-error" style="display: none">
+                                                    <div class="show-hide if-yes-dropdown " id="if-yes-dropdown">
+                                                        <p class="text-note">Note: You need to fill on below.</p>
+                                                        <div class="selects-wrapper  mb-3 ">
+                                                            <label for="exampleInputEmail1" class="form-label">
+                                                                Jurisdiction of Incorporation
+                                                                <span>[ ? ]</span>
+                                                            </label>
+                                                            <select
+                                                                class="form-select"
+                                                                name="numberofdirectors"
+                                                                aria-label="Default select example"
+                                                                id="setup-twosub-select1"
+                                                            >
+                                                                <option selected disabled>Please select</option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="selects-wrapper  mb-3 ">
+                                                            <label for="exampleInputEmail1" class="form-label">
+                                                                Number of Director(s)
+                                                                <span>[ ? ]</span>
+                                                            </label>
+                                                            <select
+                                                                class="form-select"
+                                                                name="numberofdirectors"
+                                                                aria-label="Default select example"
+                                                                id="setup-twosub-select1"
+                                                            >
+                                                                <option selected disabled>Please select</option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="selects-wrapper  mb-3 ">
+                                                            <label for="exampleInputEmail1" class="form-label">
+                                                                Number of Shareholder(s)
+                                                                <span>[ ? ]</span>
+                                                            </label>
+                                                            <select
+                                                                class="form-select"
+                                                                name="numberofdirectors"
+                                                                aria-label="Default select example"
+                                                                id="setup-twosub-select1"
+                                                            >
+                                                                <option selected disabled>Please select</option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <!-- <div id="bank-question-error">
                                                         <br>
                                                         <div class="alert alert-danger fade in alert-dismissible">Please select this field!</div>
-                                                    </div>
+                                                    </div> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -363,7 +446,12 @@
                                                     Type of Service
                                                     <span>[ ? ]</span>
                                                 </label> -->
-                                                <select class="form-select" aria-label="Default select example" id="how-kw-other">
+                                                <select
+                                                    class="form-select"
+                                                    name="recommenservices"
+                                                    aria-label="Default select example"
+                                                    id="how-kw-other"
+                                                >
                                                     <option selected disabled>Please select</option>
                                                     <optgroup label="Social Media">
                                                         <option data-know-type="text" value="6">Facebook</option>
@@ -554,8 +642,8 @@
                                                         <div class="recomm-check-box">
                                                             <div class="check-box-wrapper">
                                                                 <div class="form-group">
-                                                                    <input type="checkbox" id="Merchant">
-                                                                    <label for="Merchant">
+                                                                    <input type="checkbox" id="Beneficial">
+                                                                    <label for="Beneficial">
                                                                         <div class="d-flex">
                                                                             <span>Tick if Founder as the same Beneficial Owner</span>
                                                                         </div>
@@ -681,9 +769,414 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="verify-check-box">
+                                                <div class="check-box-wrapper">
+                                                    <div class="form-group">
+                                                        <input type="checkbox" id="correct">
+                                                        <label for="correct">
+                                                            <div class="d-flex">
+                                                                <span>I would like to confirm the above information is correct.</span>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" id="termcondition">
+                                                        <label for="termcondition">
+                                                            <div class="d-flex">
+                                                                <span>I have read and agreed Terms and Conditions</span>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </form>
                                     </div>
                                 </form>
+                            </div>
+                            <!-- tab-third  (payment method) -->
+                            <div class="third-tab-section tab">
+                                <h2 id="personal-details " class="tab-title">
+                                    Step 2: Payment Methods
+                                </h1>
+                                <div class="form-wrapper">
+                                    <div class="row">
+                                        <!-- payment-ment1 -->
+                                        <div class="col-lg-4">
+                                            <div class="payment1 payment" id="payment1">
+                                                <div class="payment-1-image">
+                                                    <img src="images/payment-visa-master.svg" alt="">
+                                                </div>
+                                                <div class="payment-text">
+                                                    <p>Credit or Debit Card</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="payment2 payment" id="payment2">
+                                                <div class="payment-1-image">
+                                                    <img src="images/payment-amex.svg" alt="">
+                                                </div>
+                                                <div class="payment-text">
+                                                    <p>Credit or Debit Card</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="payment3 payment" id="payment3">
+                                                <div class="payment-1-image">
+                                                    <img src="images/payment-paypal.svg" alt="">
+                                                </div>
+                                                <div class="payment-text">
+                                                    <p>PayPal</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="payment4 payment" id="payment4">
+                                                <div class="payment-1-image">
+                                                    <img src="images/payment-wire-bank-transfer.svg" alt="">
+                                                </div>
+                                                <div class="payment-text">
+                                                    <p>Wire Bank Transfer</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  payment-1-dropdown -->
+                                <div class="payment-1-dropdown show-hide payment-dropdown" id="payment-1-dropdown">
+                                    <div class="form-wrapper  ">
+                                        <div class="form-title">Credit Card or Debit Card Info</div>
+                                        <div class="card-number d-flex justify-content-between align-items-center">
+                                            <div class="form-group " style="flex:0 0 70%;">
+                                                <label for="exampleFormControlInput1">Card Number</label>
+                                                <input
+                                                    type="number"
+                                                    class="form-control"
+                                                    id="exampleFormControlInput1"
+                                                    placeholder="xxxxxxxxxxxxx"
+                                                >
+                                            </div>
+                                            <div class="card-images">
+                                                <img src="images/payment-visa-master.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-values d-flex justify-content-between align-items-center">
+                                            <div class="selects-wrapper form-group  mb-3 ">
+                                                <label for="exampleFormControlInput1">Expiry Date</label>
+                                                <select class="form-select" id="exampleFormControlSelect1">
+                                                    <option selected>Month</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                            <div class="selects-wrapper form-group  mb-3 ">
+                                                <label for="exampleFormControlInput1"></label>
+                                                <select class="form-select" id="exampleFormControlSelect1">
+                                                    <option selected>Year</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group mb-3 ">
+                                                <label for="exampleFormControlInput1">CVV</label>
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    id="exampleFormControlInput1"
+                                                    placeholder="CCV"
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-wrapper">
+                                        <div class="form-title">Billing Information</div>
+                                        <div class="form-group ">
+                                            <label for="exampleFormControlInput1">First Name</label>
+                                            <input
+                                                type="number"
+                                                class="form-control"
+                                                id="exampleFormControlInput1"
+                                                placeholder="Type your last Name"
+                                            >
+                                        </div>
+                                        <div class="form-group ">
+                                            <label for="exampleFormControlInput1">Last Name</label>
+                                            <input
+                                                type="number"
+                                                class="form-control"
+                                                id="exampleFormControlInput1"
+                                                placeholder="Type your last Name"
+                                            >
+                                        </div>
+                                        <div class="form-group ">
+                                            <label for="exampleFormControlInput1">Country</label>
+                                            <select class="form-select" id="exampleFormControlSelect1">
+                                                <option selected>Nepal</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group ">
+                                            <label for="exampleFormControlInput1">Address</label>
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                id="exampleFormControlInput1"
+                                                placeholder="Type your Address"
+                                            >
+                                        </div>
+                                        <div class="form-group ">
+                                            <label for="exampleFormControlInput1">City/County</label>
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                id="exampleFormControlInput1"
+                                                placeholder="Type your City/County"
+                                            >
+                                        </div>
+                                        <div class="form-group ">
+                                            <label for="exampleFormControlInput1">State/Province/Region</label>
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                id="exampleFormControlInput1"
+                                                placeholder="Type your State/Province/Region"
+                                            >
+                                        </div>
+                                        <div class="form-group ">
+                                            <label for="exampleFormControlInput1">ZIP/Postal code</label>
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                id="exampleFormControlInput1"
+                                                placeholder="Type your ZIP/Postal code"
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  payment-2-dropdown -->
+                                <div class="payment-2-dropdown show-hide payment-dropdown" id="payment-2-dropdown">
+                                    <div class="form-wrapper  ">
+                                        <div class="form-title">Credit Card or Debit Card Info</div>
+                                        <div class="card-number d-flex justify-content-between align-items-center">
+                                            <div class="form-group " style="flex:0 0 70%;">
+                                                <label for="exampleFormControlInput1">Card Number</label>
+                                                <input
+                                                    type="number"
+                                                    class="form-control"
+                                                    id="exampleFormControlInput1"
+                                                    placeholder="xxxxxxxxxxxxx"
+                                                >
+                                            </div>
+                                            <div class="card-images">
+                                                <img src="images/payment-amex.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-values d-flex justify-content-between align-items-center">
+                                            <div class="selects-wrapper form-group  mb-3 ">
+                                                <label for="exampleFormControlInput1">Expiry Date</label>
+                                                <select class="form-select" id="exampleFormControlSelect1">
+                                                    <option selected>Month</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                            <div class="selects-wrapper form-group  mb-3 ">
+                                                <label for="exampleFormControlInput1"></label>
+                                                <select class="form-select" id="exampleFormControlSelect1">
+                                                    <option selected>Year</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group mb-3 ">
+                                                <label for="exampleFormControlInput1">CVV</label>
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    id="exampleFormControlInput1"
+                                                    placeholder="CCV"
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-wrapper">
+                                        <div class="form-title">Billing Information</div>
+                                        <div class="form-group ">
+                                            <label for="exampleFormControlInput1">First Name</label>
+                                            <input
+                                                type="number"
+                                                class="form-control"
+                                                id="exampleFormControlInput1"
+                                                placeholder="Type your last Name"
+                                            >
+                                        </div>
+                                        <div class="form-group ">
+                                            <label for="exampleFormControlInput1">Last Name</label>
+                                            <input
+                                                type="number"
+                                                class="form-control"
+                                                id="exampleFormControlInput1"
+                                                placeholder="Type your last Name"
+                                            >
+                                        </div>
+                                        <div class="form-group ">
+                                            <label for="exampleFormControlInput1">Country</label>
+                                            <select class="form-select" id="exampleFormControlSelect1">
+                                                <option selected>Nepal</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group ">
+                                            <label for="exampleFormControlInput1">Address</label>
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                id="exampleFormControlInput1"
+                                                placeholder="Type your Address"
+                                            >
+                                        </div>
+                                        <div class="form-group ">
+                                            <label for="exampleFormControlInput1">City/County</label>
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                id="exampleFormControlInput1"
+                                                placeholder="Type your City/County"
+                                            >
+                                        </div>
+                                        <div class="form-group ">
+                                            <label for="exampleFormControlInput1">State/Province/Region</label>
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                id="exampleFormControlInput1"
+                                                placeholder="Type your State/Province/Region"
+                                            >
+                                        </div>
+                                        <div class="form-group ">
+                                            <label for="exampleFormControlInput1">ZIP/Postal code</label>
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                id="exampleFormControlInput1"
+                                                placeholder="Type your ZIP/Postal code"
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  payment-3-dropdown -->
+                                <div class="payment-3-dropdown show-hide payment-dropdown" id="payment-3-dropdown">
+                                    <div class="form-wrapper  ">
+                                        <div class="form-group">
+                                            <label for="exampleFormControlInput1">
+                                                Method of payment: Paypal Or Credit Card
+                                                <span style="font-weight: 400;">
+                                                    is processed by Paypal which you can use
+                                                    <img src="images/payment-paypal.svg" alt="" style="width: 200px;">
+                                                    or Paypal account.
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="payment-4-dropdown show-hide payment-dropdown " id="payment-4-dropdown">
+                                    <div class="form-wrapper  ">
+                                        <div class="form-group">
+                                            <div class="buttons">
+                                                <button id="hsbc-bank" class="tab-btn">
+                                                    <h4>HSBC BANK</h4>
+                                                </button>
+                                                <button id="sepa-transfer" class="tab-btn">
+                                                    <h4>SEPA Transfer (for European clients)</h4>
+                                                </button>
+                                            </div>
+                                            <div id="tab-hsbc" class="tab-pane show-hide show">
+                                                <strong>Method of payment: HSBC Bank Transfer</strong>
+                                                which let you send the money to HSBC Bank account. The process will take 2 - 5 working days, and we will notify your payment via email.
+                                                <strong>HSBC Bank Ltd</strong>
+                                                <ul>
+                                                    <li>
+                                                        Beneficiary Name:
+                                                        <b>One IBC Limited</b>
+                                                    </li>
+                                                    <li>Beneficiary Bank Name: The Hong Kong and Shanghai Banking Corporation Limited</li>
+                                                    <li>Beneficiary Bank Address: 141 Des Voeux Road Central, Hong Kong.</li>
+                                                    <li>
+                                                        Account Number (USD):
+                                                        <b>652483900838</b>
+                                                    </li>
+                                                    <li>
+                                                        Beneficiary Bank SWIFT code:
+                                                        <b>HSBCHKHHHKH</b>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div id="tab-sepa" class="tab-pane show-hide">
+                                                <p>
+                                                    <strong>Method of payment: SEPA Transfer (for European clients)</strong>
+                                                    When you transfer in EURO currency, it will take 2-5 days. But if your bank based in countries supported by
+                                                    <a href="/info/what-is-the-sepa-transfer" target="_blank" title="What is the SEPA Transfer?">SEPA Transfer</a>
+                                                    in EURO Currency, the process will be faster within 1 - 2 days with cheaper fee.
+                                                    <strong>Bank Account In EURO</strong>
+                                                </p>
+                                                <ul>
+                                                    <li>
+                                                        Beneficiary Name:
+                                                        <strong>One IBC Limited</strong>
+                                                    </li>
+                                                    <li>Beneficiary Bank Name: BANK OF CYPRUS PUBLIC COMPANY LTD</li>
+                                                    <li>Beneficiary Bank Address: 51 Stassinos Street, Ayia Paraskevi, P.O. Box 21472, CY1599 Nicosia, Cyprus.</li>
+                                                    <li>
+                                                        Account Number (EUR):
+                                                        <strong>357031677403</strong>
+                                                    </li>
+                                                    <li>
+                                                        IBAN:
+                                                        <strong>CY12002001950000357031677403</strong>
+                                                    </li>
+                                                    <li>
+                                                        Beneficiary Bank SWIFT code:
+                                                        <strong>BCYPCY2N</strong>
+                                                    </li>
+                                                    <li>
+                                                        <i>
+                                                            Correspondent Bank:
+                                                            <strong>Deutsche Bank AG, Frankfurt/M</strong>
+                                                        </i>
+                                                    </li>
+                                                    <li>
+                                                        <i>
+                                                            Swift Code of Correspondent Bank:
+                                                            <strong>DEUTDEFFXXX</strong>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="error-message-wrapper">
+                                <p>- Please review and correct the field(s) marked in red!</p>
+                                <p>
+                                    - Please check
+                                    <strong>I would like to confirm the above information is correct!</strong>
+                                </p>
                             </div>
                             <!-- buttons -->
                             <div style="overflow:auto;" id="nextprevious">
@@ -831,14 +1324,31 @@
                                         <span>US $00</span>
                                     </div>
                                 </div>
+                                <div class="form-wrapper">
+                                    <div class="form-title">Promo Code</div>
+                                    <div class="form-group ">
+                                        <div class="promocode">
+                                            <input type="text" placeholder="Type Your Promo Code">
+                                            <div class="apply-button" id="">
+                                                <button type="button" id="apply-button">Apply</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="overflow:auto;" id="nextprevious">
+                                <div style="text-align: center;" class="form-buttons">
+                                    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="main.js"></script>
 </html>

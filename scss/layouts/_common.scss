@@ -70,7 +70,8 @@ input.invalid {
         }
     }
 }
-.recomm-check-box {
+.recomm-check-box,
+.verify-check-box {
     .check-box-wrapper {
         padding-top: 10px;
         padding-bottom: 10px;
@@ -140,4 +141,53 @@ input.invalid {
     .form-group input:checked + label::before {
         background-color: #cc1f26;
     }
+}
+
+.verify-check-box label span {
+    color: #000 !important;
+}
+.error-red-border {
+    border: 1px solid #cc1f26 !important;
+}
+.error-message-wrapper {
+    background-color: #f2dede;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 20px;
+    p {
+        color: #cc1f26;
+        margin-bottom: 5px;
+    }
+}
+#nextprevious {
+    margin-top: 20px;
+}
+.have-company {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .btn.bg {
+        background-color: #cc1f26;
+        color: #fff;
+    }
+}
+.promocode {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    input {
+        flex: 0 0 70%;
+    }
+    .apply-button {
+        flex: 0 0 30%;
+        text-align: right;
+        width: 100%;
+    }
+    #apply-button {
+        background-color: #cc1f26;
+        border-radius: 4px;
+    }
+}
+.note {
+    color: #cc1f26;
+    margin-top: 10px;
+    display: inline-block;
 }

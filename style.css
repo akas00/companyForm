@@ -105,18 +105,21 @@ input.invalid {
     margin-top: 5px;
     margin-bottom: 5px; }
 
-.recomm-check-box .check-box-wrapper {
+.recomm-check-box .check-box-wrapper,
+.verify-check-box .check-box-wrapper {
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid #c4c4c4; }
 
-.recomm-check-box .form-group {
+.recomm-check-box .form-group,
+.verify-check-box .form-group {
   display: block;
   margin-bottom: 15px;
   width: 100%;
   margin-top: 15px; }
 
-.recomm-check-box .form-group input {
+.recomm-check-box .form-group input,
+.verify-check-box .form-group input {
   padding: 0;
   height: initial;
   width: initial;
@@ -125,20 +128,24 @@ input.invalid {
   cursor: pointer;
   width: 100%; }
 
-.recomm-check-box .form-group label {
+.recomm-check-box .form-group label,
+.verify-check-box .form-group label {
   position: relative;
   cursor: pointer;
   display: flex;
   font-size: 14px;
   color: #666; }
-  .recomm-check-box .form-group label .d-flex {
+  .recomm-check-box .form-group label .d-flex,
+  .verify-check-box .form-group label .d-flex {
     width: 100%;
     display: flex !important;
     justify-content: space-between; }
-    .recomm-check-box .form-group label .d-flex span {
+    .recomm-check-box .form-group label .d-flex span,
+    .verify-check-box .form-group label .d-flex span {
       padding-left: 15px; }
 
-.recomm-check-box .form-group label:before {
+.recomm-check-box .form-group label:before,
+.verify-check-box .form-group label:before {
   content: "";
   display: inline-block;
   position: relative;
@@ -151,7 +158,8 @@ input.invalid {
   border: 1px solid #c4c4c4;
   border-radius: 4px; }
 
-.recomm-check-box .form-group input:checked + label:after {
+.recomm-check-box .form-group input:checked + label:after,
+.verify-check-box .form-group input:checked + label:after {
   content: "";
   display: block;
   position: absolute;
@@ -163,14 +171,61 @@ input.invalid {
   border-width: 0 2px 2px 0;
   transform: rotate(45deg); }
 
-.recomm-check-box .form-group input:checked + label::before {
+.recomm-check-box .form-group input:checked + label::before,
+.verify-check-box .form-group input:checked + label::before {
   background-color: #cc1f26; }
+
+.verify-check-box label span {
+  color: #000 !important; }
+
+.error-red-border {
+  border: 1px solid #cc1f26 !important; }
+
+.error-message-wrapper {
+  background-color: #f2dede;
+  padding: 10px 20px 10px 20px;
+  margin-bottom: 20px; }
+  .error-message-wrapper p {
+    color: #cc1f26;
+    margin-bottom: 5px; }
+
+#nextprevious {
+  margin-top: 20px; }
+
+.have-company {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  .have-company .btn.bg {
+    background-color: #cc1f26;
+    color: #fff; }
+
+.promocode {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .promocode input {
+    flex: 0 0 70%; }
+  .promocode .apply-button {
+    flex: 0 0 30%;
+    text-align: right;
+    width: 100%; }
+  .promocode #apply-button {
+    background-color: #cc1f26;
+    border-radius: 4px; }
+
+.note {
+  color: #cc1f26;
+  margin-top: 10px;
+  display: inline-block; }
 
 h1 {
   text-align: center; }
 
 .service-form-section {
   padding-top: 140px; }
+
+.payment-4-dropdown .tab-btn.bg {
+  background-color: red; }
 
 input {
   padding: 10px;
@@ -187,7 +242,7 @@ input.invalid {
   padding: 40px 0;
   border-radius: 10px;
   position: relative;
-  padding-bottom: 40px; }
+  padding-bottom: 20px; }
 
 .form-buttons button {
   border-radius: 30px;
@@ -311,36 +366,38 @@ button:hover {
 .how-know-section .others-input {
   padding-top: 15px; }
 
-.right-wrapper .order-summary-section .form-wrapper {
-  background: #fff;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); }
-  .right-wrapper .order-summary-section .form-wrapper .summary-contents .summary-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid #e5e5e5;
-    padding-top: 10px; }
-    .right-wrapper .order-summary-section .form-wrapper .summary-contents .summary-wrapper label {
-      font-size: 16px; }
-      .right-wrapper .order-summary-section .form-wrapper .summary-contents .summary-wrapper label p {
-        margin: 0;
-        font-weight: 400; }
-    .right-wrapper .order-summary-section .form-wrapper .summary-contents .summary-wrapper p {
-      font-size: 16px;
-      font-weight: 600; }
-  .right-wrapper .order-summary-section .form-wrapper .summary-total {
-    padding-top: 10px;
-    border-top: 1px solid #e5e5e5;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-    .right-wrapper .order-summary-section .form-wrapper .summary-total p {
-      font-size: 21px;
-      font-weight: 600;
-      margin: 0; }
-    .right-wrapper .order-summary-section .form-wrapper .summary-total span {
-      font-size: 21px;
-      font-weight: 600; }
+.right-wrapper {
+  margin-top: 40px; }
+  .right-wrapper .order-summary-section .form-wrapper {
+    background: #fff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); }
+    .right-wrapper .order-summary-section .form-wrapper .summary-contents .summary-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #e5e5e5;
+      padding-top: 10px; }
+      .right-wrapper .order-summary-section .form-wrapper .summary-contents .summary-wrapper label {
+        font-size: 16px; }
+        .right-wrapper .order-summary-section .form-wrapper .summary-contents .summary-wrapper label p {
+          margin: 0;
+          font-weight: 400; }
+      .right-wrapper .order-summary-section .form-wrapper .summary-contents .summary-wrapper p {
+        font-size: 16px;
+        font-weight: 600; }
+    .right-wrapper .order-summary-section .form-wrapper .summary-total {
+      padding-top: 10px;
+      border-top: 1px solid #e5e5e5;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .right-wrapper .order-summary-section .form-wrapper .summary-total p {
+        font-size: 21px;
+        font-weight: 600;
+        margin: 0; }
+      .right-wrapper .order-summary-section .form-wrapper .summary-total span {
+        font-size: 21px;
+        font-weight: 600; }
 
 .width-50 {
   width: 48%; }
@@ -358,3 +415,56 @@ button:hover {
     padding-bottom: 5px; }
     .second-tab-section .form-group label span {
       color: #cc1f26; }
+
+.third-tab-section .form-wrapper .col-lg-4 {
+  margin-bottom: 20px; }
+
+.third-tab-section .form-wrapper .form-group {
+  margin-bottom: 15px; }
+  .third-tab-section .form-wrapper .form-group label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 14px; }
+
+.third-tab-section .form-wrapper .payment {
+  height: 100%;
+  background: #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.27);
+  border-radius: 4px;
+  text-align: center;
+  padding: 20px 20px 0 18px;
+  opacity: 0.6;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  .third-tab-section .form-wrapper .payment:hover {
+    border: 1px solid #cc1f26;
+    opacity: 1; }
+  .third-tab-section .form-wrapper .payment.active {
+    border: 1px solid #cc1f26;
+    opacity: 1; }
+  .third-tab-section .form-wrapper .payment .payment-text {
+    text-align: center; }
+    .third-tab-section .form-wrapper .payment .payment-text p {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 13px; }
+  .third-tab-section .form-wrapper .payment img {
+    max-height: 70px;
+    object-fit: contain; }
+
+.third-tab-section .payment-1-dropdown .card-number .card-images {
+  margin-top: 20px; }
+
+.third-tab-section .card-values .form-group {
+  flex: 0 0 30%; }
+
+.third-tab-section .payment-4-dropdown .buttons {
+  display: flex; }
